@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="left">
+            <div class="logo">
+                <img src="images/odin-lined.png" alt="odin logo image">
+                <h1>ODIN</h1>
+            </div>
+            <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Haley West</a> in <a href="https://unsplash.com/">Unsplash</a></p>
+        </div>
+        <div class="content">
+            <div class="sectionInfo">
+                <p>This is not a real service! You know you need something like this in your life 
+                    to help you realise your deepest dreams. 
+                    Sign up <i>now</i> to get started
+                </p>
+                <p>You <i>know</i> you want to.</p>
+            </div>
+            <div class="formSection">
+                <form action="#">
+                    <fieldset>
+                        <legend>Let's do this!</legend>
+
+                        <div class="form-group">
+                            <label for="firstName">FIRST NAME<span style="color: red;">*</span></label>
+                            <input type="text" name="first_name" id="firstName" placeholder="John" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastName">LAST NAME<span style="color: red;">*</span></label>
+                            <input type="text" name="last_name" id="lastName" placeholder="Doe" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">EMAIL<span style="color: red;">*</span></label>
+                            <input type="email" name="email" id="email" placeholder="user@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phoneNumber">PHONE NUMBER<span style="color: red;">*</span></label>
+                            <input type="tel" pattern="^(?:254|\+254|0)?([17]\d{8})$" name="phone_number" id="phoneNumber" placeholder="254123456789" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">PASSWORD<span style="color: red;">*</span></label>
+                            <input type="password" pattern="^.{8,}$" name="password" id="password" autocomplete="new-password" placeholder="********" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirmPassword">CONFIRM PASSWORD<span style="color: red;">*</span></label>
+                            <input type="password" pattern="^.{8,}$" name="confirrm_password" id="confirmPassword" autocomplete="new-password" placeholder="********" required>
+                        </div>
+
+                    </fieldset>
+                </form>
+            </div>
+            <div class="submitSection">
+                <button id="submitBtn" for="submit">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
